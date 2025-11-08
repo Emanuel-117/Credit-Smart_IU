@@ -1,0 +1,33 @@
+/* Contenedor principal del simulador */
+.simulador{ max-width:1200px; margin:0 auto; padding:12px; }
+
+/* Zona de filtros: inputs y selects alineados */
+.filtros{ background:#e9ecef; padding:14px; border-radius:8px; display:flex; gap:12px; align-items:flex-end; flex-wrap:wrap; }
+.filtro-item{ flex:1; display:flex; flex-direction:column; min-width:180px; }
+.filtro-item label{ font-weight:600; margin-bottom:6px; }
+.filtro-item input, .filtro-item select{ padding:8px; border:1px solid #ddd; border-radius:6px; }
+
+/* Resultados: grid de tarjetas */
+.resultados-simulador{ margin-top:18px; }
+.catalogo{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+
+/* Tarjetas dentro del simulador (similares a index) */
+.card-credito{ background:white; padding:12px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+.card-credito:hover {  transform: translateY(-6px); box-shadow:0 4px 12px  rgb(177, 204, 231);}
+.card-header{ display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.icono-credito{ width:clamp(22px,2.6vw,28px); height:auto; }
+.descripcion-corta{ color:var(--muted); font-size:0.95em; }
+.card-actions{ margin-top:10px; }
+.card-actions .btn-primary{ width:100%; padding:9px; border-radius:6px; }
+
+/*boton de filtro*/
+.btn-primary:hover {
+  transform: translateY(-4px);
+}
+
+/* Responsive: pasar filtros a columna en pantallas pequeñas */
+@media(max-width:768px){
+	.filtros{ flex-direction:column; }
+	.filtro-item{ width:100%; }
+	.catalogo{ grid-template-columns:1fr; }
+}
