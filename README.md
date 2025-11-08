@@ -27,4 +27,6 @@ Instrucciones para ejecutar el proyecto
 1. Abrir el archivo `index.html` en un navegador web (doble clic en el archivo o "Abrir con..." -> navegador).
 2. Alternativamente, si usas VS Code puedes instalar la extensión "Live Server" y pulsar "Go Live" para servirlo localmente (recomendado para ver cambios en caliente).
 
-
+<img src="readme/captura 1.png" alt="Hero" width="700" />
+<img src="readme/captura 2.png" alt="Hero" width="700" />
+<img src="readme/captura 3.png" alt="Hero" width="700" />
