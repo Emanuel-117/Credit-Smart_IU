@@ -1,0 +1,20 @@
+.formulario-credito{ max-width:800px; margin:0 auto; padding:16px; background:#fff; border-radius:8px; }
+
+/* Agrupa campos relacionados */
+fieldset{ border:1px solid #ddd; padding:14px; margin-bottom:16px; border-radius:6px; }
+legend{ font-weight:bold; color:var(--primary); padding:0 6px; }
+
+/* Cada campo del formulario */
+.form-group{ margin-bottom:12px; }
+.form-group label{ display:block; margin-bottom:6px; }
+.form-group input, .form-group select, .form-group textarea{ width:100%; padding:8px; border:1px solid #ccc; border-radius:4px; font-size:1rem; }
+.form-group textarea{ resize:vertical; }
+
+/* Botones y acciones del formulario */
+.form-actions{ text-align:right; margin-top:10px; }
+.info-form{ background:#e9ecef; padding:10px; border-left:5px solid var(--primary); margin-bottom:14px; }
+.btn-secondary:hover{ transform:translateY(-4px); } 
+.btn-primary:hover{ transform: translateY(-4px);}
+
+/* Responsive: menos padding en móvil */
+@media(max-width:768px){ .formulario-credito{ padding:12px; } }
