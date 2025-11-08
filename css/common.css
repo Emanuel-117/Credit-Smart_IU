@@ -1,0 +1,75 @@
+:root{
+    /* Variables: colores y tonos usados en todo el sitio */
+    --primary: #1E59A6;   /* color principal (botones, header) */
+    --success: #008060;   /* color para valores positivos (ej. tasas) */
+    --bg: #E6EBF0;        /* fondo general */
+    --text: #212121;         /* color del texto */
+    --muted: #6c757d;     /* color gris para descripciones */
+}
+
+/* Regla base para evitar problemas de cajas */
+*{ box-sizing: border-box; }
+
+/* Estilos del <body> */
+body{
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0; 
+}
+
+/* Tipografía fluida: adapta el tamaño base según ancho de ventana*/
+
+
+html{ font-size: clamp(14px, 1.2vw, 18px); }
+body{ font-size: 1rem; }
+
+/* Contenedor principal centrado */
+main{ max-width:1200px; margin:20px auto; padding:16px; }
+
+/* Header: barra superior con navegación */
+header{ 
+    background:#003366; 
+    color:white; 
+    padding:12px; 
+    text-align:center;
+}
+
+/* Logo y título */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-container img {
+    height: 45px;
+    width: 45px;
+    margin-right: 5px;
+}
+
+.logo-container h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Enlaces de la navegación  */
+header nav{ display:flex; justify-content:flex-end; flex-wrap:wrap; gap:6px; }
+nav a{ color:white; text-decoration:none; padding:6px 8px; display:inline-block; }
+nav a:hover{ opacity:0.95; box-shadow:0 4px 12px rgb(177, 204, 231);}
+
+
+/* Botones reutilizables */
+.btn-primary{ background:var(--primary); color:white; padding:8px 12px; border-radius:6px; text-decoration:none; display:inline-block; }
+.btn-secondary{ background:#6c757d; color:white; padding:8px 12px; border-radius:6px; }
+
+/* Pie de página  */
+footer{ text-align:center; padding:12px; background:#002244; color:white; margin-top:30px; }
+
+/* Reglas responsive sencillas */
+@media (max-width:768px){
+    main{ padding:10px; }
+    nav a{ display:inline-block; margin:6px 4px; }
+}
