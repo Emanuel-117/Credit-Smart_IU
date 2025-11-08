@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreditSmart - Catálogo de Créditos</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Header simple: logo y navegación principal -->
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="CreditSmart Logo">
+            <h1>CreditSmart</h1>
+        </div>
+        <nav>
+            <a href="index.html">Catálogo</a>
+            <a href="simulador.html">Simulador</a>
+            <a href="solicitar.html">Solicitar Crédito</a>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="hero" aria-label="Hero: encuentra tu crédito perfecto">
+            <div class="hero-inner">
+                <h2>Encuentra tu crédito perfecto</h2>
+                <p class="hero-desc">¿Buscas financiar tus metas? En CreditSmart tenemos la solución ideal para ti. Explora nuestros productos, compara tasas y plazos, y encuentra el crédito que se adapte a tu necesidad.</p>
+                
+            </div>
+        </section>
+
+    
+    <div class="titulo-seccion"><h2>Nuestros productos</h2></div>
+
+    <!-- Catálogo: cada .card-credito es un producto -->
+    <section class="catalogo">
+            <div class="card-credito" data-min="1000000" data-max="50000000">
+                <div class="card-header">
+                    <img src="images/icono-libre-inversion.png" alt="Icono Libre Inversión" class="icono-credito">
+                    <h3>Crédito Libre Inversión</h3>
+                </div>
+                <div class="card-body">
+                    <p class="descripcion-corta">Dinero para viajes, deudas o estudios.</p>
+                    <p>Tasa Anual: <span class="tasa-interes">12.5%</span></p>
+                    <p>Monto: $1.000.000 - $50.000.000</p>
+                    <p>Plazo: Hasta 60 meses</p>
+                </div>
+                <div class="card-actions">
+                    <a href="solicitar.html?tipo=libre-inversion" class="btn-primary">Solicitar Ahora</a>
+                </div>
+            </div>
+
+            <div class="card-credito" data-min="5000000" data-max="150000000">
+                <div class="card-header">
+                    <img src="images/icono-vehiculo.png" alt="Icono Vehículo" class="icono-credito">
+                    <h3>Crédito Vehículo</h3>
+                </div>
+                <div class="card-body">
+                    <p class="descripcion-corta">Financia hasta el 80% del valor de tu vehículo.</p>
+                    <p>Tasa Anual: <span class="tasa-interes">10.9%</span></p>
+                    <p>Monto: $5.000.000 - $150.000.000</p>
+                    <p>Plazo: Hasta 72 meses</p>
+                </div>
+                <div class="card-actions">
+                    <a href="solicitar.html?tipo=vehiculo" class="btn-primary">Solicitar Ahora</a>
+                </div>
+            </div>
+
+            <div class="card-credito" data-min="10000000" data-max="500000000">
+                <div class="card-header">
+                    <img src="images/icono-vivienda.png" alt="Icono Vivienda" class="icono-credito">
+                    <h3>Crédito Vivienda</h3>
+                </div>
+                <div class="card-body">
+                    <p class="descripcion-corta">Tasas preferenciales para vivienda.</p>
+                    <p>Tasa Anual: <span class="tasa-interes">8.9%</span></p>
+                    <p>Monto: $10.000.000 - $500.000.000</p>
+                    <p>Plazo: Hasta 240 meses</p>
+                </div>
+                <div class="card-actions">
+                    <a href="solicitar.html?tipo=vivienda" class="btn-primary">Solicitar Ahora</a>
+                </div>
+            </div>
+            
+            <div class="card-credito" data-min="500000" data-max="20000000">
+                <div class="card-header">
+                    <img src="images/icono-educativo.png" alt="Icono Educativo" class="icono-credito">
+                    <h3>Crédito Educativo</h3>
+                </div>
+                <div class="card-body">
+                    <p class="descripcion-corta">Para matrículas y posgrados.</p>
+                    <p>Tasa Anual: <span class="tasa-interes">9.5%</span></p>
+                    <p>Monto: $500.000 - $20.000.000</p>
+                    <p>Plazo: Hasta 48 meses</p>
+                </div>
+                <div class="card-actions">
+                    <a href="solicitar.html?tipo=educativo" class="btn-primary">Solicitar Ahora</a>
+                </div>
+            </div>
+
+            <div class="card-credito" data-min="20000000" data-max="1000000000">
+                <div class="card-header">
+                    <img src="images/icono-empresarial.png" alt="Icono Empresarial" class="icono-credito">
+                    <h3>Crédito Empresarial</h3>
+                </div>
+                <div class="card-body">
+                    <p class="descripcion-corta">Para capital de trabajo y expansión.</p>
+                    <p>Tasa Anual: <span class="tasa-interes">14.2%</span></p>
+                    <p>Monto: $20.000.000 - $1.000.000.000</p>
+                    <p>Plazo: Hasta 84 meses</p>
+                </div>
+                <div class="card-actions">
+                    <a href="solicitar.html?tipo=empresarial" class="btn-primary">Solicitar Ahora</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 FinTech Solutions S.A.S</p>
+    </footer>
+</body>
+</html>
