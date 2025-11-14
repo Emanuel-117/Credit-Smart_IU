@@ -1,7 +1,7 @@
 :root{
     /* Variables: colores y tonos usados en todo el sitio */
     --primary: #1E59A6;   /* color principal (botones, header) */
-    --success: #008060;   /* color para valores positivos (ej. tasas) */
+    --success: #008060;   /* color para valores positivos (tasas) */
     --bg: #E6EBF0;        /* fondo general */
     --text: #212121;         /* color del texto */
     --muted: #6c757d;     /* color gris para descripciones */
@@ -12,7 +12,8 @@
 
 /* Estilos del <body> */
 body{
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
     margin: 0; 
